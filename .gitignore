@@ -2,7 +2,7 @@
 # 此 .gitignore 文件已由 Microsoft(R) Visual Studio 自动创建。
 ################################################################################
 
-/LearningC
+
 MultiThread/x64/Debug/MultiThread.exe.recipe
 MultiThread/x64/Debug/MultiThread.ilk
 MultiThread/x64/Debug/MultiThread.log
@@ -18,3 +18,24 @@ MultiThread/x64/Debug/MultiThread.tlog/link.write.1.tlog
 MultiThread/x64/Debug/MultiThread.tlog/MultiThread.lastbuildstate
 MultiThread/x64/Debug/vc143.idb
 MultiThread/x64/Debug/vc143.pdb
+LearningC/x64/Debug/MultiThread.pdb
+LearningC/x64/Debug/MultiThread.exe
+LearningC/LearningC/x64/Debug/LearningC.tlog/LearningC.lastbuildstate
+LearningC/LearningC/x64/Debug/LearningC.log
+LearningC/LearningC/x64/Debug/LearningC.exe.recipe
+LearningC/.vs/LearningC/v17/Solution.VC.db-wal
+LearningC/.vs/LearningC/v17/Solution.VC.db-shm
+LearningC/.vs/LearningC/v17/Solution.VC.db
+LearningC/.vs/LearningC/v17/ipch/AutoPCH/cf6d964a7fc81b1f/LEARNINGC.ipch
+LearningC/.vs/LearningC/v17/ipch/AutoPCH/6b54a9c763b550f7/MULTITHREAD.ipch
+LearningC/.vs/LearningC/v17/ipch/AutoPCH/55af839369b7259f/LAMDA.ipch
+LearningC/.vs/LearningC/v17/DocumentLayout.json
+LearningC/.vs/LearningC/v17/DocumentLayout.backup.json
+LearningC/.vs/LearningC/v17/Browse.VC.opendb
+LearningC/.vs/LearningC/v17/Browse.VC.db-wal
+LearningC/.vs/LearningC/v17/Browse.VC.db-shm
+LearningC/.vs/LearningC/v17/Browse.VC.db
+LearningC/.vs/LearningC/v17/.suo
+LearningC/.vs/LearningC/FileContentIndex/9784b1ae-14cf-4a87-91dd-ba8bbd63b7a4.vsidx
+LearningC/.vs/LearningC/FileContentIndex/8623ff47-f25d-4468-bc7e-a50d1a82efb9.vsidx
+LearningC/.vs/LearningC/FileContentIndex/5eef3051-9a84-4a5a-9c3c-8ad31b0a9be8.vsidx

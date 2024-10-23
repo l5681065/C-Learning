@@ -7,31 +7,32 @@ class Friend;
 
 class People
 {
-        public: People(float money) :myMoney(money)
-       {
+	public: 
+		People(float money) :myMoney(money)
+		{
 
-       }
+		}
 
-    friend float TotalMoney(People  people, People anotherPeople);
+		friend float TotalMoney(People  people, People anotherPeople);
 
-    friend class Friend;
-private:
-       float myMoney = 0.0f;
+		friend class Friend;
+	private:
+		float myMoney = 0.0f;
 };
 
 class Friend
 {
-public:
-    Friend(People people) :people(people)
-    {
+	public:
+		Friend(People people) :people(people)
+		{
 
-    }
-    void SeePeopleMoney()
-    {
-        cout << people.myMoney <<endl;
-    }
+		}
+		void SeePeopleMoney()
+		{
+			cout << people.myMoney << endl;
+		}
 private:
-    People people;
+	People people;
 };
 
 
@@ -41,16 +42,16 @@ private:
 //错误	C2255	“friend” : 不允许位于类定义之外	Friend	G : \GitHubProject\C - Learning\LearningC\Friend\Friend.cpp	15
 float TotalMoney(People people, People anotherPeople)
 {
-    return people.myMoney + anotherPeople.myMoney;
+	return people.myMoney + anotherPeople.myMoney;
 }
 
 int main()
 {
-    People people = People(5.0f);
-    People anotherPeople = People(5.0f);
+	People people = People(5.0f);
+	People anotherPeople = People(5.0f);
 
-    cout << TotalMoney(people,anotherPeople) <<endl;
+	cout << TotalMoney(people, anotherPeople) << endl;
 
-    Friend aFriend = Friend(people);
-    aFriend.SeePeopleMoney();
+	Friend aFriend = Friend(people);
+	aFriend.SeePeopleMoney();
 }

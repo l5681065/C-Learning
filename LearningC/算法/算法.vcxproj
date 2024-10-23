@@ -130,7 +130,6 @@
     <ClCompile Include="Node.cpp" />
     <ClCompile Include="算法.cpp" />
     <ClCompile Include="遍历链表.cpp" />
-    <ClCompile Include="链表合并.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Node.h" />

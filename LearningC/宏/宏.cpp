@@ -61,6 +61,14 @@ void PrintSwitchCase_Marco(int caseIndex)
 	}
 }
 
+#define DLLEXPORT __declspec(dllexport)
+#define COREUOBJECT_API DLLEXPORT
+
+COREUOBJECT_API int Add(int a,int b)
+{
+	return a + b;
+}
+
 int main()
 {
 	const char* name = "YOYO";

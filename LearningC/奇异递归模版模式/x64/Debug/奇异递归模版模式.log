@@ -1,0 +1,19 @@
+﻿  奇异递归模版模式.cpp
+D:\GitHubProject_JiXieYingPan\C-Learning\LearningC\奇异递归模版模式\奇异递归模版模式.cpp(134,12): error C2248: “Logger::Logger”: 无法访问 private 成员(在“Logger”类中声明)
+      D:\GitHubProject_JiXieYingPan\C-Learning\LearningC\奇异递归模版模式\奇异递归模版模式.cpp(146,2):
+      参见“Logger::Logger”的声明
+      D:\GitHubProject_JiXieYingPan\C-Learning\LearningC\奇异递归模版模式\奇异递归模版模式.cpp(143,7):
+      参见“Logger”的声明
+      D:\GitHubProject_JiXieYingPan\C-Learning\LearningC\奇异递归模版模式\奇异递归模版模式.cpp(134,12):
+      模板实例化上下文(最早的实例化上下文)为
+          D:\GitHubProject_JiXieYingPan\C-Learning\LearningC\奇异递归模版模式\奇异递归模版模式.cpp(143,23):
+          查看对正在编译的 类 模板 实例化“Singleton<Logger>”的引用
+          D:\GitHubProject_JiXieYingPan\C-Learning\LearningC\奇异递归模版模式\奇异递归模版模式.cpp(133,12):
+          在编译 类 模板 成员函数“T &Singleton<T>::get_instance(void)”时
+          with
+          [
+              T=Logger
+          ]
+              D:\GitHubProject_JiXieYingPan\C-Learning\LearningC\奇异递归模版模式\奇异递归模版模式.cpp(154,28):
+              请参阅 "main" 中对 "Singleton<Logger>::get_instance" 的第一个引用
+  

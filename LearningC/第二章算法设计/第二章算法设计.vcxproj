@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{2d5d5c08-9e5f-4dfc-8f61-ee3326f046e7}</ProjectGuid>
-    <RootNamespace>算法</RootNamespace>
+    <ProjectGuid>{4bb7a17e-313a-498b-b148-9b35cecea539}</ProjectGuid>
+    <RootNamespace>第二章算法设计</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -93,8 +93,6 @@
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
-      <EnableCOMDATFolding>true</EnableCOMDATFolding>
-      <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
@@ -121,22 +119,12 @@
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
-      <EnableCOMDATFolding>true</EnableCOMDATFolding>
-      <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Node.cpp" />
-    <ClCompile Include="算法.cpp" />
-    <ClCompile Include="遍历链表.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Node.h" />
-    <ClInclude Include="生成链表.hpp" />
-    <ClInclude Include="链表合并.hpp" />
-    <ClCompile Include="第一章习题.cpp" />
-    <ClCompile Include="第二章习题.cpp" />
+    <ClCompile Include="FileName.cpp" />
+    <ClCompile Include="将两个递增的有序链表合并为一个递增的有序链表。要求结果链表仍使用原来两个链表的存储空间, 不另外占用其它的存储空间。表中不允许有重复的数据。.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

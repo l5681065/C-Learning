@@ -15,28 +15,11 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="第一章习题.cpp">
+    <ClCompile Include="将两个递增的有序链表合并为一个递增的有序链表。要求结果链表仍使用原来两个链表的存储空间, 不另外占用其它的存储空间。表中不允许有重复的数据。.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="第二章习题.cpp">
+    <ClCompile Include="FileName.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="Node.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="遍历链表.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Node.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="链表合并.hpp">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="生成链表.hpp">
-      <Filter>头文件</Filter>
-    </ClInclude>
   </ItemGroup>
 </Project>

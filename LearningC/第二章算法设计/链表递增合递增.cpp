@@ -72,7 +72,7 @@ ListNode* mergeTwoLists(ListNode* l1, ListNode* l2) {
 	return head;
 }
 
-int main()
+int main_2_1()
 {
 		// 创建第一个有序链表 1 -> 3 -> 5
 	ListNode* l1 = new ListNode(1);

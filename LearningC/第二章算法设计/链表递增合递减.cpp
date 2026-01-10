@@ -115,7 +115,7 @@ ListNode* mergeTwoListsDesc(ListNode* l1, ListNode* l2)
 }
 
 // 辅助函数：打印链表
-void printList(ListNode* head) {
+inline void printList(ListNode* head) {
 	ListNode* current = head;
 	while (current) {
 		std::cout << current->val << " -> ";
@@ -141,7 +141,7 @@ ListNode* createList(const std::initializer_list<int>& vals) {
 	return head;
 }
 
-int main() {
+int main_2_2() {
 	// 生成mergeTwoListsDesc的测试用例
 
 		// 测试用例 1: 基本情况

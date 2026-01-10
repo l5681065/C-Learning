@@ -21,5 +21,8 @@
     <ClCompile Include="链表递增合递减.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="递增链表求交集并存于A.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

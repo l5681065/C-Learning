@@ -125,7 +125,7 @@ inline void printList(ListNode* head) {
 }
 
 // 辅助函数：根据数组创建链表
-ListNode* createList(const std::initializer_list<int>& vals) {
+inline ListNode* createList(const std::initializer_list<int>& vals) {
 	if (vals.size() == 0) {
 		return nullptr;
 	}

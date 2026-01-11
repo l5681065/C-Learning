@@ -22,7 +22,7 @@ inline void printList(ListNode* head) {
 }
 
 // 从vector创建链表
-ListNode* createList(const std::vector<int>& vals) {
+inline ListNode* createList(const std::vector<int>& vals) {
 	if (vals.empty()) {
 		return nullptr;
 	}

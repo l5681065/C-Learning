@@ -30,6 +30,7 @@ inline ListNode* createList(const std::vector<int>& vals) {
 	return head;
 }
 
+//我的算法理解错了题意，求的是对称差集，而不是A-B
 int difference_my(ListNode *& A, ListNode*& B)
 {
 	ListNode*  dummyNode = new ListNode(0); // 创建哑节点
@@ -41,21 +42,17 @@ int difference_my(ListNode *& A, ListNode*& B)
 	{
 		if (pa->val < pb->val)
 		{
-			ListNode* temp = pa->next;
 			tail->next = pa;
 			tail = tail->next;
-			tail->next = pb; 
-			pa = temp;
+			pa = pa->next;
 			
 			count ++;
 		}
 		else if (pa->val > pb->val)
 		{
-			ListNode* temp = pb->next;
 			tail->next = pb;
 			tail = tail->next;
-			tail->next = pa;
-			pb = temp;
+			pb = pb->next;
 			count++;
 		}
 		else
@@ -98,7 +95,7 @@ void runTestCase(const std::string& title, const std::vector<int>& aValues, cons
 	std::cout << "B: ";
 	printList(b);
 
-	const int diffCount = difference_ai(a,b);    // difference_my(a, b);
+	const int diffCount =   difference_my(a, b);
 	std::cout << "差集 (A - B): ";
 	printList(a);
 	std::cout << "元素个数: " << diffCount << std::endl;
@@ -117,7 +114,8 @@ int main()
 	runTestCase("测试用例 4: B 为空", { 1, 2, 3 }, {});
 	runTestCase("测试用例 5: A 为空", {}, { 1, 2, 3 });
 	runTestCase("测试用例 6: B 含更小与更大元素", { 3, 4, 5, 7 }, { 1, 3, 6, 8 });
-
+	runTestCase("测试用例 7: ", { 10, 30, 50, 70 }, { 31, 32, 50, 70 });
+	runTestCase("测试用例 8: ", { 1,2,3,4,5 }, { 31, 32, 50, 70 });
 	return 0;
 
 }

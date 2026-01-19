@@ -83,6 +83,45 @@ int difference_my(ListNode *& A, ListNode*& B)
 	return count;
 }
 
+int  difference_my2(ListNode*& A, ListNode*& B)
+{
+	ListNode* dummyNode = new ListNode(0); // 创建哑节点
+	ListNode* tail = dummyNode; // 结果链表的尾指针
+	ListNode* pa = A;
+	ListNode* pb = B;
+	int count = 0; // 计数器，记录差集元素个数
+	while (pa && pb)
+	{
+		if (pa->val < pb->val)
+		{
+			tail->next = pa;
+			tail = tail->next;
+			pa = pa->next;
+			count ++;
+		}
+		else if (pa->val > pb->val)
+		{
+			pb = pb->next;
+		}
+		else
+		{
+			pa = pa->next;
+			pb = pb->next;
+			tail->next = nullptr; // 断开连接
+		}
+	}
+	while (pa)
+	{
+		tail->next = pa;
+		tail = tail->next;
+		pa = pa->next;
+		count++;
+	}
+	tail->next = nullptr; // 结束结果链表
+	A = dummyNode->next; // 更新A为结果链表的头
+	return count;
+}
+
 
 void runTestCase(const std::string& title, const std::vector<int>& aValues, const std::vector<int>& bValues)
 {
@@ -95,7 +134,7 @@ void runTestCase(const std::string& title, const std::vector<int>& aValues, cons
 	std::cout << "B: ";
 	printList(b);
 
-	const int diffCount =   difference_my(a, b);
+	const int diffCount =   difference_my2(a, b);
 	std::cout << "差集 (A - B): ";
 	printList(a);
 	std::cout << "元素个数: " << diffCount << std::endl;
@@ -106,7 +145,7 @@ void runTestCase(const std::string& title, const std::vector<int>& aValues, cons
 }
 
 
-int main()
+int main_2_4()
 {
 	runTestCase("测试用例 1: 部分重叠", { 1, 2, 3, 4, 5 }, { 2, 4, 6 });
 	runTestCase("测试用例 2: B 为 A 的子集", { 2, 4, 6, 8 }, { 2, 4, 6, 8 });

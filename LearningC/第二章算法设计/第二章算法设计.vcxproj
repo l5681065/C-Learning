@@ -124,6 +124,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="ListUtils.hpp" />
+    <ClCompile Include="单链表拆分.cpp" />
     <ClCompile Include="递增链表求交集并存于A.cpp" />
     <ClCompile Include="递增链表求差集.cpp" />
     <ClCompile Include="链表拆分.cpp" />

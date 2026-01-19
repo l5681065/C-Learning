@@ -6,7 +6,7 @@
 #pragma once
 
 
-int main_2_5()
+int main()
 {
 	return 0;
 }
